@@ -87,9 +87,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 if (rb6.isChecked()){
                                     numeroDias = 6;
                                 }
-                                double totalBasico = xnumeroPersonas * numeroDias;
+                                double totalBasico = xnumeroPersonas * numeroDias * mDestino;
                                 DecimalFormat valueFormat = new DecimalFormat("###,###,###,###.#");
-                                Deuda.setText(valueFormat.format(totalDeuda));
+                                total.setText(valueFormat.format(totalBasico));
 
                             }
                             else{
