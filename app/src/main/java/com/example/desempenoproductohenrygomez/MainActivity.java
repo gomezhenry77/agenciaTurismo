@@ -90,7 +90,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 double totalBasico = xnumeroPersonas * numeroDias * mDestino;
                                 DecimalFormat valueFormat = new DecimalFormat("###,###,###,###.#");
                                 total.setText(valueFormat.format(totalBasico));
-
+                                if(tour.isChecked()){
+                                    //totalBasico.setText(valueFormat.format(totalBasico + 10000));
                             }
                             else{
                                 Toast.makeText(getApplicationContext(),"Se permiten máximo 10 personas por cotizacion",Toast.LENGTH_SHORT).show();
